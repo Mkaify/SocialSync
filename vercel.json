@@ -1,0 +1,21 @@
+{
+  "name": "socialsync-frontend",
+  "version": 2,
+  "buildCommand": "cd frontend && npm install && npm run build",
+  "outputDirectory": "frontend/build",
+  "framework": "create-react-app",
+  "rewrites": [
+    {
+      "source": "/(.*)",
+      "destination": "/index.html"
+    }
+  ],
+  "env": {
+    "REACT_APP_API_URL": "@react_app_api_url"
+  },
+  "build": {
+    "env": {
+      "REACT_APP_API_URL": "@react_app_api_url"
+    }
+  }
+} 
